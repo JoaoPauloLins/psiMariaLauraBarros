@@ -1,0 +1,38 @@
+.header {
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.header a {
+    display: inline;
+    text-decoration: none;
+}
+
+.header a:visited {
+    color: white;
+}
+
+.header__navegacao {
+    display: inline-block;
+}
+
+.header__navegacao a {
+    background-color: #114573;
+    color: white;
+    margin: 0px 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.header__navegacao a:hover {
+    background-color: #94a6ba;
+}
+
+.header__logo {
+    width: 160px;
+    height: 102px;
+}
+
+.header ul li {
+    display: inline;
+}
