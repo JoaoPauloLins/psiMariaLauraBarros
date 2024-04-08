@@ -4,6 +4,19 @@
     border: 0;
 }
 
+main a {
+    text-decoration: none;
+    background-color: #114573;
+    color: white;
+    margin: 0px 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+main a:hover {
+    background-color: #94a6ba;
+}
+
 section {
     padding: 20px 100px;
     color: #114573;
@@ -12,7 +25,7 @@ section {
 #inicio,
 #sobreMim,
 #perguntas {
-    background-color: #94a6ba;
+    background-color: #D2ABA4;
 }
 
 #terapia,
@@ -36,15 +49,17 @@ section {
     height: 80%;
 }
 
-main a {
-    text-decoration: none;
-    background-color: #114573;
-    color: white;
-    margin: 0px 5px;
-    padding: 5px 10px;
-    border-radius: 20px;
+#sobreMim div {
+    display: inline-block;
+    width: 50%;
 }
 
-main a:hover {
-    background-color: #94a6ba;
+#sobreMim aside {
+    display: inline-block;
+    width: 40%;
+}
+
+#contato img {
+    width: 20%;
+    height: 20%;
 }
