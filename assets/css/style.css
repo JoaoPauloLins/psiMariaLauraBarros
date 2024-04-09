@@ -4,6 +4,36 @@
     border: 0;
 }
 
+h2 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding-bottom: 10px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+main a {
+    text-decoration: none;
+    background-color: #114573;
+    color: white;
+    margin: 0px 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+main a:hover {
+    background-color: #94a6ba;
+}
+
+section {
+    color: #114573;
+}
+
 main {
     display: grid;
     grid-template-areas: 
@@ -37,11 +67,6 @@ main {
     padding-top: 200px;
 }
 
-.inicioConteudo h2 {
-    font-size: 1.5rem;
-    padding-bottom: 10px;
-}
-
 .inicioConteudo h3 {
     font-size: 2.5rem;
     padding-bottom: 100px;
@@ -52,6 +77,11 @@ main {
     padding-bottom: 50px;
 }
 
+.inicio__img {
+    width: 100%;
+    height: 100%;
+}
+
 #abordagem {
     grid-area: abordagem;
     background-color: red;
@@ -59,12 +89,55 @@ main {
 
 #terapia {
     grid-area: terapia;
-    background-color: green;
+}
+
+.explicacaoTextos {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.terapiaAtendimento {
+    display: grid;
+    grid-template-areas:
+        "atendimentoOnline"
+        "atendimentoPresencial";
+    row-gap: 50px;
 }
 
 #sobreMim {
     grid-area: sobreMim;
-    background-color: yellow;
+    display: grid;
+    grid-template-areas:
+    "sobreMimConteudo ."
+    "sobreMimConteudo sobreMimAside"
+    "sobreMimConteudo .";
+    grid-template-columns: 1fr 518px;
+    grid-template-rows: 50px 345px 50px;
+    align-items: center;
+}
+
+#sobreMim div {
+    grid-area: sobreMimConteudo;
+}
+
+#sobreMim aside {
+    grid-area: sobreMimAside;
+}
+
+.sobreMimConteudo h3 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+.sobreMimConteudo p {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.sobreMim__img {
+    width: 100%;
+    height: 100%;
 }
 
 #opinioes {
@@ -81,61 +154,6 @@ main {
     grid-area: contato;
     background-color: pink;
 }
-
-main a {
-    text-decoration: none;
-    background-color: #114573;
-    color: white;
-    margin: 0px 5px;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-
-main a:hover {
-    background-color: #94a6ba;
-}
-
-section {
-    /* padding: 20px 100px; */
-    color: #114573;
-}
-
-/* #inicio,
-#sobreMim,
-#perguntas {
-    background-color: #D2ABA4;
-}
-
-#terapia,
-#opnioes,
-#contato {
-    background-color: #d5d6d8;
-} */
-
-/* #inicio div {
-    display: inline-block;
-    width: 40%;
-} */
-
-/* #inicio aside {
-    display: inline-block;
-    width: 40%;
-} */
-
-.inicio__img {
-    width: 100%;
-    height: 100%;
-}
-
-/* #sobreMim div {
-    display: inline-block;
-    width: 50%;
-} */
-
-/* #sobreMim aside {
-    display: inline-block;
-    width: 40%;
-} */
 
 #contato img {
     width: 40%;
