@@ -4,6 +4,10 @@
     border: 0;
 }
 
+body {
+    background-color: #94a6ba;
+}
+
 h2 {
     font-size: 1.5rem;
     padding-bottom: 10px;
@@ -48,6 +52,7 @@ main {
 }
 
 #inicio {
+    background-color: beige;
     grid-area: inicio;
     display: grid;
     grid-template-areas: "inicioConteudo inicioAside";
@@ -57,6 +62,7 @@ main {
 
 #inicio div {
     grid-area: inicioConteudo;
+    padding-left: 50px;
 }
 
 #inicio aside {
@@ -84,11 +90,12 @@ main {
 
 #abordagem {
     grid-area: abordagem;
-    background-color: red;
+    background-color:#d2aba4;
 }
 
 #terapia {
     grid-area: terapia;
+    background-color: beige;
 }
 
 .explicacaoTextos {
@@ -107,6 +114,7 @@ main {
 
 #sobreMim {
     grid-area: sobreMim;
+    background-color:#d2aba4;
     display: grid;
     grid-template-areas:
     "sobreMimConteudo ."
@@ -142,17 +150,17 @@ main {
 
 #opinioes {
     grid-area: opinioes;
-    background-color: blueviolet;
+    background-color: beige;
 }
 
 #perguntas {
     grid-area: perguntas;
-    background-color: blue;
+    background-color:#d2aba4;
 }
 
 #contato {
     grid-area: contato;
-    background-color: pink;
+    background-color: beige;
 }
 
 #contato img {

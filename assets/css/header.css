@@ -1,6 +1,6 @@
 .header {
     padding: 5px;
-    background-color: #ffffff;
+    background-color: beige;
     display: grid;
     grid-template-areas: "logo navegacao";
     grid-template-rows: 51px 1fr;
@@ -14,7 +14,7 @@
 }
 
 .header__navegacao {
-    grid-area: navegacao;   
+    grid-area: navegacao; 
 }
 
 .header a {
