@@ -1,6 +1,20 @@
 .header {
     padding: 5px;
     background-color: #ffffff;
+    display: grid;
+    grid-template-areas: "logo navegacao";
+    grid-template-rows: 51px 1fr;
+    grid-template-columns: 80px 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.header__logo {
+    grid-area: logo;
+}
+
+.header__navegacao {
+    grid-area: navegacao;   
 }
 
 .header a {
@@ -10,10 +24,6 @@
 
 .header a:visited {
     color: white;
-}
-
-.header__navegacao {
-    display: inline-block;
 }
 
 .header__navegacao a {
@@ -28,9 +38,9 @@
     background-color: #94a6ba;
 }
 
-.header__logo {
-    width: 10%;
-    height: 10%;
+.header__logo a img {
+    width: 80px;
+    height: 51px;
 }
 
 .header ul li {

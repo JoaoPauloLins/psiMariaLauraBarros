@@ -4,6 +4,84 @@
     border: 0;
 }
 
+main {
+    display: grid;
+    grid-template-areas: 
+        ". inicio ."
+        ". abordagem ."
+        ". terapia ."
+        ". sobreMim ."
+        ". opinioes ."
+        ". perguntas ."
+        ". contato .";
+    grid-template-columns: 100px 1fr 100px;
+}
+
+#inicio {
+    grid-area: inicio;
+    display: grid;
+    grid-template-areas: "inicioConteudo inicioAside";
+    grid-template-columns: 1fr 518px;
+    grid-template-rows: 777px;
+}
+
+#inicio div {
+    grid-area: inicioConteudo;
+}
+
+#inicio aside {
+    grid-area: inicioAside;
+}
+
+.inicioConteudo {
+    padding-top: 200px;
+}
+
+.inicioConteudo h2 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.inicioConteudo h3 {
+    font-size: 2.5rem;
+    padding-bottom: 100px;
+}
+
+.inicioConteudo p {
+    font-size: 1rem;
+    padding-bottom: 50px;
+}
+
+#abordagem {
+    grid-area: abordagem;
+    background-color: red;
+}
+
+#terapia {
+    grid-area: terapia;
+    background-color: green;
+}
+
+#sobreMim {
+    grid-area: sobreMim;
+    background-color: yellow;
+}
+
+#opinioes {
+    grid-area: opinioes;
+    background-color: blueviolet;
+}
+
+#perguntas {
+    grid-area: perguntas;
+    background-color: blue;
+}
+
+#contato {
+    grid-area: contato;
+    background-color: pink;
+}
+
 main a {
     text-decoration: none;
     background-color: #114573;
@@ -18,11 +96,11 @@ main a:hover {
 }
 
 section {
-    padding: 20px 100px;
+    /* padding: 20px 100px; */
     color: #114573;
 }
 
-#inicio,
+/* #inicio,
 #sobreMim,
 #perguntas {
     background-color: #D2ABA4;
@@ -32,34 +110,34 @@ section {
 #opnioes,
 #contato {
     background-color: #d5d6d8;
-}
+} */
 
-#inicio div {
+/* #inicio div {
     display: inline-block;
     width: 40%;
-}
+} */
 
-#inicio aside {
+/* #inicio aside {
     display: inline-block;
     width: 40%;
-}
+} */
 
 .inicio__img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
 }
 
-#sobreMim div {
+/* #sobreMim div {
     display: inline-block;
     width: 50%;
-}
+} */
 
-#sobreMim aside {
+/* #sobreMim aside {
     display: inline-block;
     width: 40%;
-}
+} */
 
 #contato img {
-    width: 20%;
-    height: 20%;
+    width: 40%;
+    height: 40%;
 }
